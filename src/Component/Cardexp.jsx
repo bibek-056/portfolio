@@ -18,9 +18,9 @@ const Cardexp = (props) => {
         }
     ]
     return (
-        <div className="flex gap-4 h-40 w-4/5 border border-gray-400 bg-white shadow-2xl p-4 rounded-md">
+        <div className="flex gap-4 h-fit w-4/5 border border-gray-400 bg-white shadow-2xl p-4 rounded-md">
             <div className="w-1/4 h-full">
-                <img src={cardData[props.open - 1 ]?.image} alt="image"/>
+                     <img src={cardData[props.open - 1 ]?.image} alt="image"/>
             </div>
             <div className=" w-3/4 h-full">
                 <p className="text-sm leading-4 font-normal">{cardData[props.open - 1 ]?.about}</p>
